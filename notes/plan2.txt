@@ -1,0 +1,46 @@
+'''
+This plan is to help in the design of creating a report_generator.py
+sNp files are expected to always be single ended, the option single/diff will convert
+
+
+The scope of this portion is to establish a pipeline.
+report_generator is a 2nd layer back-end built on top of
+guide_manager. 
+
+Given: 
+
+
+'''
+
+def read_info(self, path):
+	'''
+	read_info takes a path and reads info in as a dictionary self.info,  default location
+	'''
+	pass
+
+def read_guide(self, path):
+	'''
+	read_guide takes a guide path and creates a self.gm instance and populates it with that guide, default location
+	'''
+	pass
+
+def build_template(self, template_path, output_path):
+	# read_template takes a path and reads it in to self.template,  default location
+	# insert info and tables and plots into template
+	# dump to output path
+        pass
+
+
+def create_report(self):
+	'''
+	takes in an info, template, and guide, all paths
+	
+
+	# read_info(path)
+	# read_template(path)
+	# read_guide(path)
+
+	# gm.set_xy()
+	# gm.gen_plots()
+
+	# build_template(template_path, output_path)

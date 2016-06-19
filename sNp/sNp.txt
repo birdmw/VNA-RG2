@@ -1,0 +1,6 @@
+All sNp files here will be scraped if pulled from report_generator.py
+
+
+For Questions Email: birdmw@gmail.com
+
+Available Online at: https://github.com/birdmw/VNA-Report-Generator/

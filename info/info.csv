@@ -1,0 +1,35 @@
+key,value,Column,Column [1],Column [2]
+TestRequest,123456,,,
+MSBusinessUnit,SI Test Lab,,,
+MSProjectCodeName,Demonstration VNA,,,
+MSBuildPhase,EV0.1,,,
+RequestDate,1/1/2001,,,
+DueDate,7/3/2015,,,
+,,,,
+SIComplianceEngineer,RT or CS,,,
+SILabManager,Johnny Deng (jodeng),,,
+SITestEngineer,JY or TB,,,
+,,,,
+TestOverview,These are special notes for our final report to include,,,
+,,,,
+<DUT>,,,,
+SI,Description,,,
+SI-1000-1,HDMI cable 3-meters,,,
+SI-1000-2,DP Cable,,,
+SI-1000-3,PCB prototype,,,
+SI-1000-4,Test Coupon A,,,
+SI-1000-5,Test Coupon Z,,,
+</DUT>,,,,
+<PORT>,,,,
+Configuration,"VNA
+Port #","Virtual
+Diff Port #",Connected Component (Ploarity),Probe Type (SN)
+1,1,1,U31 (+),250-GSSG (7234)
+,3,1,U31 (-),250-GSSG (7234)
+,2,2,J12 (+),250-GSSG (7283)
+,4,2,J12 (-),250-GSSG (7283)
+2,1,1,DP_LANE0_P_C (on U201),250-GSSG (7234)
+,3,1,DP_LANE0_N_C (on U201),250-GSSG (7234)
+,2,2,DP_LANE0_P_C (on J23),250-GSSG (7283)
+,4,2,DP_LANE0_N_C (on J23),250-GSSG (7283)
+</PORT>,,,,

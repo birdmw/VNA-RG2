@@ -1,0 +1,105 @@
+#Write as two classes
+# class 1: data_structure
+# class 2: GUI
+# the gui will 
+# sNp file names must be unique
+
+DATA STRUCTURE
+
+
+interactions = list[{
+plot_number, 
+plot_name, 
+image_file, 
+file_number, 
+file_path,
+S_XX_YY, 
+Single / Diff, 
+MAG / DEG, 
+port_12_34 / port_13_24
+}, {...}, {...}]
+
+=================DATA_STRUCTURE===========
+# build_interactions()
+# accepts plot count, file_name_list, occurance nested dict {Plot: {file_name:count, file_name:count, ...} } 
+
+# name_plots():
+#  name each plot after concat of universal property values (excluding name and empty '' values)
+
+# universal_props(list):
+#  accepts list of interactions
+#  returns dict of key:values where values are universally similar
+
+# fetch_interactions(inverse = False) 
+#  returns interactions that have matching key:value pairs
+#  if inverse = True, returns interactions with mismatching key:value pair
+
+# fetch_unique(
+
+#write data to guide
+
+#read data from guide
+
+
+===============/DATA_STRUCTURE============
+
+================GUIDE_GUI=================
+
+What will be the name of this new guide file? guide_name
+How many plots would you like to make? iP
+How many sNp files would you like to use? iF
+==Okay==
+
+Select sNp files
+==Okay==
+
+For plot iP, how many times should each file appear:
+File 1:____
+File 2:____
+File 3:____
+==Okay==
+
+# build list of interactions
+
+Please Enter any properties that are universal across all plots
+s_parameter:____ (ex: '5_16')
+single/diff:____ (ex: 's' or 'd')
+mag/deg:____ (ex: 'm' or 'd')
+port_layout:____ (ex: '12_34' or '13_24')
+==Okay==
+
+#for each plot iP:
+# if plot has at least 1 unanswered field
+Please Enter any properties that are universal for plot iP 
+S:____ (ex: 5_16)
+single/diff:____ (ex: 'd')
+MAG/DEG:____ (ex: 'm')
+PORT 12_24/13_24:____ (ex: '12_34')
+==Okay==
+
+#for each file iF:
+# if file has at least 1 unanswered field
+Please Enter any properties that are universal for file iF 
+S:____ (ex: 5_16)
+single/diff:____ (ex: 'd')
+MAG/DEG:____ (ex: 'm')
+PORT 12_24/13_24:____ (ex: '12_34')
+==Okay==
+
+## ask for each property that is not yet filled in:
+Plot iP, File iF, Occurance iO properties 
+
+S:____ (ex: 5_16)
+single/diff:____ (ex: 'd')
+MAG/DEG:____ (ex: 'm')
+PORT 12_24/13_24:____ (ex: '12_34')
+
+# write to file guide_name
+===========/GUI===============
+
+===========report generator============
+#report generator imports the data_structure module, it always expects a guide file name. 
+  if that file is not found, it will make one the best it can with the given properties.
+  then that guide file, whether generated or not, is used
+
+#report generator uses template from the template folder, and info from the info folder.
